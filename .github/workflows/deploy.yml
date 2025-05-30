@@ -26,7 +26,11 @@ jobs:
       - name: Checkout your repository using git
         uses: actions/checkout@v2
       - name: Install, build, and upload your site output
-        uses: withastro/action@v0
+        uses: withastro/action@v2
+        # with:
+            # deno-version: 1.38.3 # The specific version of Deno that should be used to build your site. Defaults to 1.38.3. (optional)
+            # deno-setup-task: setup # The Deno task that should be run to build your site. Defaults to setup. (optional)
+            # build-command: deno task build # The command that should be run to build your site. Defaults to deno task build. (optional)
         # with:
             # path: . # The root location of your Astro project inside the repository. (optional)
             # node-version: 16 # The specific version of Node that should be used to build your site. Defaults to 16. (optional)
