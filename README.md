@@ -16,6 +16,7 @@ Inside of your Astro project, you'll see the following folders and files:
 ├── src/
 │   └── pages/
 │       └── index.astro
+├── deno.json
 └── package.json
 ```
 
