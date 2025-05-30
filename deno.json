@@ -1,0 +1,7 @@
+{
+  "unstable": ["bare-node-builtins"],
+  "tasks": {
+    "setup": "deno cache .",
+    "build": "deno run --allow-read --allow-run --allow-env npm:astro build"
+  }
+}
